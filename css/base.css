@@ -57,6 +57,7 @@ html {
     font-size: 62.5%;
     line-height: 1.6rem;
     font-family: 'Sora',Helvetica, Arial, sans-serif;
+    /* hiệu ứng trượt xuống khi bấm vào các phần tử trên thanh nav-bar */
     scroll-behavior: smooth;
 
 }
@@ -80,6 +81,9 @@ html {
 /* setting cho mỗi section có margin trên dưới (setting large)*/
 .st-l {
     margin: 170px 0;
+}
+.footer.st-l {
+    margin: 170px 0 0;
 }
 
 /* canh layout vô giữa (setting small)*/ 
