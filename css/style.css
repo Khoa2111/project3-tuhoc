@@ -571,6 +571,7 @@
     font-weight: 400;
     line-height: 28px; /* 175% */
     width: 336px;
+    padding-top: 18px;
 }
 .footer__contact {
     gap: 78px;
