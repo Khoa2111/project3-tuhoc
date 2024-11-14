@@ -76,6 +76,10 @@
     margin-bottom: 22px;
 
 }
+.header-body-left .sub-heading {
+    color: #fff;
+    opacity: 0.8;
+}
 
 .header-contact {
     display: flex;

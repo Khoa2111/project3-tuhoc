@@ -51,6 +51,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -83,7 +84,7 @@
         <header class="header">
             <section class="header-container st-s">
                 <div class="header-body df-1">
-                    <div class="header-body-left">
+                    <div class="header-body-left" data-aos="fade-up" data-aos-duration="1000">
                         <h2 class="header-heading">Exceptional dental care for all ages.</h2>
                         <p class="sub-heading">Exceptional dental care for all ages. Your great smile begins with a
                             great dentist.</p>
@@ -93,8 +94,10 @@
                         </div>
                     </div>
                     <figure class="header-body-right df-1">
-                        <img loading="lazy" src="./img/header-img-l.png" alt="image" class="header-img-l">
-                        <img loading="lazy" src="./img/header-img-s.png" alt="image" class="header-img-s">
+                        <img loading="lazy" src="./img/header-img-l.png" alt="image" class="header-img-l"
+                            data-aos="fade-right">
+                        <img loading="lazy" src="./img/header-img-s.png" alt="image" class="header-img-s"
+                            data-aos="fade-left">
                     </figure>
                 </div>
             </section>
@@ -115,7 +118,7 @@
                         </div>
                         <figure class="service-right">
                             <ul class="service__list">
-                                <li class="service__item df ">
+                                <li class="service__item df " data-aos="zoom-out-down">
                                     <div class="service__item-left">
                                         <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -134,7 +137,7 @@
                                             x-rays.</p>
                                     </div>
                                 </li>
-                                <li class="service__item df">
+                                <li class="service__item df" data-aos="zoom-out-down">
                                     <div class="service__item-left">
                                         <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -153,7 +156,7 @@
                                             x-rays.</p>
                                     </div>
                                 </li>
-                                <li class="service__item df">
+                                <li class="service__item df" data-aos="zoom-out-down">
                                     <div class="service__item-left">
                                         <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -181,7 +184,7 @@
             <!-- works -->
             <div class="works st-l" id="about">
                 <section class="works-container st-s">
-                    <div class="works-header">
+                    <div class="works-header" data-aos="zoom-out-down">
                         <h2 class="heading">How it works
                         </h2>
                         <p class="sub-heading">Exceptional dental care for all ages. Your great smile begins with a
@@ -228,11 +231,13 @@
                 <section class="about-container st-s df-1">
                     <div class="about-left">
                         <figure class="about__img">
-                            <img loading="lazy" src="./img/about-img-l.png" alt="image" class="about__img-1">
-                            <img loading="lazy" src="./img/about-img-s.png" alt="image" class="about__img-s">
+                            <img loading="lazy" src="./img/about-img-l.png" alt="image" class="about__img-1"
+                                data-aos="zoom-out-right">
+                            <img loading="lazy" src="./img/about-img-s.png" alt="image" class="about__img-s"
+                                data-aos="zoom-out-right">
                         </figure>
                     </div>
-                    <div class="about-right">
+                    <div class="about-right" data-aos="zoom-out-left">
                         <h2 class="heading">Take back your smile with shine.</h2>
                         <p class="sub-heading">If you’re missing multiple teeth due to decay, injury, or the natural
                             aging process, dentures might be the perfect solution.</p>
@@ -318,7 +323,7 @@
                         <figure class="install-left">
                             <img loading="lazy" src="./img/install-mobile.png" alt="" class="install-mobile">
                         </figure>
-                        <section class="install-right">
+                        <section class="install-right" data-aos="flip-up">
                             <h2 class="heading">Take back your smile with dentures</h2>
                             <p class="sub-heading">If you’re missing multiple teeth due to decay, injury, or the natural
                                 aging process, dentures might be the perfect solution.</p>
@@ -334,7 +339,7 @@
             <div class="blog st-l">
                 <section class="blog-container st-s df-1">
                     <!-- blog left -->
-                    <div class="blog-left">
+                    <div class="blog-left" data-aos="fade-down-right">
                         <h2 class="heading">Read Latest News & Events.</h2>
                         <a href="" class="blog__cta-read">Read All Blog</a>
                         <div class="button blog__button df">
@@ -355,7 +360,7 @@
                         </div>
                     </div>
                     <!-- blog right -->
-                    <div class="blog-right">
+                    <div class="blog-right" data-aos="fade-down-left">
                         <div class="blog__list">
                             <!-- blog item 1 -->
                             <article class="blog__item">
@@ -390,7 +395,7 @@
             </div>
             <!-- appointment -->
             <div class="appointment st-l">
-                <section class="appointment-container st-s">
+                <section class="appointment-container st-s" data-aos="zoom-in-up">
                     <div class="appointment__info">
                         <h2 class="heading">Always welcoming new patients</h2>
                         <p class="sub-heading">Take control of your dental health and get the personalized care you
@@ -467,6 +472,10 @@
             </section>
         </footer>
     </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
