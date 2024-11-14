@@ -705,3 +705,11 @@ line-height: 26px; /* 185.714% */width: 273px;
     font-size: 1.4rem;
     font-weight: 400;
 }
+
+/* animation-AOS-Animate */
+/* [data-aos] {
+    visibility: hidden;
+  }
+  [data-aos].animate__animated {
+    visibility: visible;
+  } */

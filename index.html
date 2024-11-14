@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./font/themify-icons/themify-icons.css">
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
@@ -51,7 +52,11 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+    <!-- animation-AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Animation-Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -108,7 +113,7 @@
             <div class="service st-l" id="services">
                 <section class="service-container st-s">
                     <div class="service-top">
-                        <h2 class="heading">Our services</h2>
+                        <h2 class="heading" data-aos="fadeInUp">Our services</h2>
                         <p class="sub-heading">Exceptional dental care for all ages. Your great smile begins with a
                             great dentist.</p>
                     </div>
@@ -118,7 +123,7 @@
                         </div>
                         <figure class="service-right">
                             <ul class="service__list">
-                                <li class="service__item df " data-aos="zoom-out-down">
+                                <li class="service__item df " data-aos="zoom-out-down" data-aos-offset="200">
                                     <div class="service__item-left">
                                         <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -137,7 +142,7 @@
                                             x-rays.</p>
                                     </div>
                                 </li>
-                                <li class="service__item df" data-aos="zoom-out-down">
+                                <li class="service__item df" data-aos="zoom-out-down" data-aos-offset="200">
                                     <div class="service__item-left">
                                         <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -474,7 +479,11 @@
     </section>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            useClassNames: true,
+            initClassName: false,
+            animatedClassName: 'animate__animated',
+        });
     </script>
 </body>
 
